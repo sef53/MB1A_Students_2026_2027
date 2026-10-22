@@ -1,0 +1,13 @@
+---
+title: "hpa_quarto.qmd"
+---
+
+I am calculating the total number of  *regionally elevated* genes in the **forebrain**, including the cerebral cortex, basal ganglia, thalamus and hypothalamus, for pigs, humans and mice
+```{r}
+mouse<- sum(55,185,60,98)
+pig<- sum(109,157,31,45)
+human <- sum(180,83,57,110)
+print(paste('Mice, pigs and humans have', mouse,',', pig,'and', human, 'regionally elevated genes in the forebrain respectively' ))
+install.packages("styler")
+```
+Therefore, humans have the highest level of regionally elevated genes in the forebrain

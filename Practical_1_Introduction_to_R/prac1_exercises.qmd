@@ -1,0 +1,40 @@
+---
+title: "Practical_1_Introduction_to_R/prac1_exercises.qmd"
+author: "Sophie Fleet"
+---
+```{r}
+round(3.14159, digits = 2)
+```
+```{r}
+print(seq(2,13,3))
+```
+```{r}
+print(seq(from = 7, by = 5, to = 30))
+```
+```{r}
+print(rep(2,5))
+print(rep(times = 5, x = 3))
+```
+
+```{r}
+my_variable <- 12
+my_variable <- 10
+print(my_variable)
+print(class(my_variable))
+```
+```{r}
+x<- 2
+y <- "Hello"
+z <- TRUE
+print(paste(x,',',class(x)))
+print(paste(y,',',class(y)))
+print(paste(z,',',class(z)))
+```
+
+```{r}
+install.packages("fortunes")
+```
+```{r}
+library(fortunes)
+```
+
