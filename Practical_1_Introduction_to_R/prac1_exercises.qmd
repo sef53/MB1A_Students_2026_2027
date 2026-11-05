@@ -37,4 +37,75 @@ install.packages("fortunes")
 ```{r}
 library(fortunes)
 ```
+```{r}
+#numeric vector practise
+my_first_vector <- c(1, 5, 9)
+print(my_first_vector)
+#character vector practise
+character_vec <- c("hello", "this", "is", "a", "character", "vector")
+print(character_vec)
+#logical vector practise
+logical_vec <- c(TRUE, FALSE, TRUE)
+print(logical_vec)
+#putting existing variables into one vector
+x <- 1
+y <- 2
+z <- 3
+
+xyz_vec <- c(x, y, z)
+#One-based indexing
+nice_food <- c("cheese", "beans", "potatoes")
+
+print(nice_food[1])
+print(nice_food[2])
+print(nice_food[3])
+#core exercise
+all_my_pets <- c("dog", "horse", "guinea pig", "chicken", "cat")
+pet<- all_my_pets[4]
+print(pet)
+```
+```{r}
+#data frame intoduction
+install.packages("gt")
+```
+```{r}
+fruits <- c("apple", "pear", "banana")
+lengths <- c(22, 30, 55)
+weights <- c(150, 165, 170)
+
+my_data_frame <- tibble(
+  fruit = fruits,
+  length = lengths,
+  weight = weights
+)
+
+
+print(my_data_frame)
+```
+```{r}
+```
+
+
+```{r}
+library(tibble)
+fruits <- c("apple", "pear", "banana")
+lengths <- c(22, 30, 55)
+weights <- c(150, 165, 170)
+
+my_data_frame <- tibble(
+  fruit = fruits,
+  length = lengths,
+  weight = weights
+)
+
+
+print(my_data_frame)
+```
+```{r}
+install.packages("tidyverse")
+```
+```{r}
+my_data_frame <- tibble(cell_ID = c("CX1","CX2"),treated=c(TRUE,FALSE),num_cells_before=c(5413,8123),num_cells_after=c(1432,7543))
+gt(my_data_frame)
+```
 
